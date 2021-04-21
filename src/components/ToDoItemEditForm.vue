@@ -1,7 +1,7 @@
 <template>
   <form class="stack-small" @submit.prevent="onSubmit">
     <div>
-      <label class="edit-label">Edit Name for &quot;{{ label }}&quot;</label>
+      <label class="edit-label">编辑 &quot;{{ label }}&quot;</label>
       <input
         :id="id"
         type="text"
@@ -11,12 +11,12 @@
     </div>
     <div class="btn-group">
       <button type="button" class="btn" @click="onCancel">
-        Cancel
-        <span class="visually-hidden">editing {{ label }}</span>
+        取消
+        <span class="visually-hidden">正在编辑 {{ label }}</span>
       </button>
       <button type="submit" class="btn btn__primary">
-        Save
-        <span class="visually-hidden">edit for {{ label }}</span>
+        保存
+        <span class="visually-hidden">编辑 {{ label }}</span>
       </button>
     </div>
   </form>
